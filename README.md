@@ -1,6 +1,9 @@
 Dev express ile Örnek Hastahane Otomasyon masaüstü projesi. 
-Bu projede hastalar,doktorlar ve sekreterler için farklı giriş panelleri ve rolleri ile örnek bir hastaneye giriş yapılır.. 
+
+Bu projede hastalar,doktorlar ve sekreterler için farklı giriş panelleri ve rolleri ile örnek bir hastaneye giriş yapılır.
+
 Randevu kayıt,hasta kayıt ve hastanın sonuçlarını görebileceği paneller bulunmaktadır. 
+
 Doktorlar için farklı modüller içerisinde doktor kaydetme işlemleri, doktorlara atanan hastaların durumlarının bulunduğu randevu ekranı bulunmaktadır.
 
 
