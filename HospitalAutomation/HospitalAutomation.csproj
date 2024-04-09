@@ -1,0 +1,259 @@
+﻿<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{DF47763B-CDED-456A-BE42-9E20B90A7BDD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>HospitalAutomation</RootNamespace>
+    <AssemblyName>HospitalAutomation</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="DevExpress.BonusSkins.v21.2" />
+    <Reference Include="DevExpress.Data.Desktop.v21.2" />
+    <Reference Include="DevExpress.Data.v21.2" />
+    <Reference Include="DevExpress.Utils.v21.2" />
+    <Reference Include="DevExpress.Sparkline.v21.2.Core" />
+    <Reference Include="DevExpress.XtraEditors.v21.2" />
+    <Reference Include="DevExpress.Printing.v21.2.Core" />
+    <Reference Include="DevExpress.XtraGrid.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a, processorArchitecture=MSIL" />
+    <Reference Include="DevExpress.XtraLayout.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="DevExpress.XtraPrinting.v21.2, Version=21.2.6.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmBransForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmBransForm.Designer.cs">
+      <DependentUpon>frmBransForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDoktorDetayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDoktorDetayForm.Designer.cs">
+      <DependentUpon>frmDoktorDetayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDoktorDuzenleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDoktorDuzenleForm.Designer.cs">
+      <DependentUpon>frmDoktorDuzenleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDoktorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDoktorForm.Designer.cs">
+      <DependentUpon>frmDoktorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDoktorGirisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDoktorGirisForm.Designer.cs">
+      <DependentUpon>frmDoktorGirisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDoktorGoruntuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDoktorGoruntuleForm.Designer.cs">
+      <DependentUpon>frmDoktorGoruntuleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDuyurularForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDuyurularForm.Designer.cs">
+      <DependentUpon>frmDuyurularForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmDuyuruPaneliForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmDuyuruPaneliForm.Designer.cs">
+      <DependentUpon>frmDuyuruPaneliForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHastaDuzenleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHastaDuzenleForm.Designer.cs">
+      <DependentUpon>frmHastaDuzenleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHastaGirisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHastaGirisForm.Designer.cs">
+      <DependentUpon>frmHastaGirisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHastaGoruntuleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHastaGoruntuleForm.Designer.cs">
+      <DependentUpon>frmHastaGoruntuleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHastaKayitForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHastaKayitForm.Designer.cs">
+      <DependentUpon>frmHastaKayitForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmHastaDetayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmHastaDetayForm.Designer.cs">
+      <DependentUpon>frmHastaDetayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmLoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmLoginForm.Designer.cs">
+      <DependentUpon>frmLoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPersonelDetayForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPersonelDetayForm.Designer.cs">
+      <DependentUpon>frmPersonelDetayForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmPersonelGirisForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmPersonelGirisForm.Designer.cs">
+      <DependentUpon>frmPersonelGirisForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\frmRandevuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\frmRandevuForm.Designer.cs">
+      <DependentUpon>frmRandevuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SqlBaglantisi.cs" />
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmBransForm.resx">
+      <DependentUpon>frmBransForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDoktorDetayForm.resx">
+      <DependentUpon>frmDoktorDetayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDoktorDuzenleForm.resx">
+      <DependentUpon>frmDoktorDuzenleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDoktorForm.resx">
+      <DependentUpon>frmDoktorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDoktorGirisForm.resx">
+      <DependentUpon>frmDoktorGirisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDoktorGoruntuleForm.resx">
+      <DependentUpon>frmDoktorGoruntuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDuyurularForm.resx">
+      <DependentUpon>frmDuyurularForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmDuyuruPaneliForm.resx">
+      <DependentUpon>frmDuyuruPaneliForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHastaDuzenleForm.resx">
+      <DependentUpon>frmHastaDuzenleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHastaGirisForm.resx">
+      <DependentUpon>frmHastaGirisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHastaGoruntuleForm.resx">
+      <DependentUpon>frmHastaGoruntuleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHastaKayitForm.resx">
+      <DependentUpon>frmHastaKayitForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmHastaDetayForm.resx">
+      <DependentUpon>frmHastaDetayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmLoginForm.resx">
+      <DependentUpon>frmLoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPersonelDetayForm.resx">
+      <DependentUpon>frmPersonelDetayForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmPersonelGirisForm.resx">
+      <DependentUpon>frmPersonelGirisForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\frmRandevuForm.resx">
+      <DependentUpon>frmRandevuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="App.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Veritabanı\Hastane_Otamasyonu.bak" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\patient.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\person.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
